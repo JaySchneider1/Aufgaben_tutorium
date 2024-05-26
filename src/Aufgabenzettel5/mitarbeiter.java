@@ -14,9 +14,10 @@ public class mitarbeiter {
         this.gehalt = gehalt;
         this.projekte = new ArrayList<>();
     }
-    public boolean addProjekt(projekt projekt){
-    for ( projekt z : projekte){
+
+    public boolean addProjekt(projekt projekt) {
+        for (projekt z : projekte) {
 //Artur hänge hier... hast du einen Tipp?
-    }
+        }
     }
 }

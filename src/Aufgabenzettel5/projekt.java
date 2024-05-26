@@ -20,7 +20,7 @@ public class projekt {
     }
 
     public void setProjektnummer(long projektnummer) {
-        if(projektnummer > 0)this.projektnummer = projektnummer;
+        if (projektnummer > 0) this.projektnummer = projektnummer;
         else System.out.println("Nummer muss größer als 0 sein");
     }
 
@@ -55,11 +55,12 @@ public class projekt {
     public void setEnddatum(long enddatum) {
         this.enddatum = enddatum;
     }
-    public int getDauerInTagen(){
-        if (enddatum == -1){
+
+    public int getDauerInTagen() {
+        if (enddatum == -1) {
             return (int) enddatum;
         }
-        return (int) ((enddatum - startdatum)/3600);
+        return (int) ((enddatum - startdatum) / 3600);
     }
 
     @Override
@@ -70,7 +71,7 @@ public class projekt {
                 "projektname=' " + projektname + '\'' +
                 "startdatum= " + startdatum +
                 "enddatum= " + (enddatum > 0 ? enddatum : "--" +
-                "Dauer= " + getDauerInTagen()+
+                "Dauer= " + getDauerInTagen() +
                 '}');
     }
 }
